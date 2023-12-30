@@ -22,7 +22,7 @@ return {
   },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
-  --
+  { "lukas-reineke/indent-blankline.nvim", enabled = false },
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   -- {
   --   "L3MON4D3/LuaSnip",
@@ -33,6 +33,28 @@ return {
   --     luasnip.filetype_extend("javascript", { "javascriptreact" })
   --   end,
   -- },
+  { "ribru17/bamboo.nvim",
+        event = "User AstroFile",
+  },
+  { "nvim-neorg/neorg",
+        config = function()
+            require('neorg').setup {
+                load = {
+                    ["core.defaults"] = {}, -- Loads default behaviour
+                    ["core.concealer"] = {}, -- Adds pretty icons to your documents
+                    ["core.dirman"] = { -- Manages Neorg workspaces
+                        config = {
+                            workspaces = {
+                                cpp = "~/notes/cpp",
+                            },
+                        },
+                    },
+                },
+            }
+        end,
+        run = ":Neorg sync-parsers",
+        requires = "nvim-lua/plenary.nvim",
+  },
   -- {
   --   "windwp/nvim-autopairs",
   --   config = function(plugin, opts)
