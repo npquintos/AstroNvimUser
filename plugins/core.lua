@@ -36,25 +36,6 @@ return {
   { "ribru17/bamboo.nvim",
         event = "User AstroFile",
   },
-  { "nvim-neorg/neorg",
-        config = function()
-            require('neorg').setup {
-                load = {
-                    ["core.defaults"] = {}, -- Loads default behaviour
-                    ["core.concealer"] = {}, -- Adds pretty icons to your documents
-                    ["core.dirman"] = { -- Manages Neorg workspaces
-                        config = {
-                            workspaces = {
-                                cpp = "~/notes/cpp",
-                            },
-                        },
-                    },
-                },
-            }
-        end,
-        run = ":Neorg sync-parsers",
-        requires = "nvim-lua/plenary.nvim",
-  },
   -- {
   --   "windwp/nvim-autopairs",
   --   config = function(plugin, opts)
