@@ -11,7 +11,7 @@ return {
   -- },
   "nvim-neorg/neorg",
   build = ":Neorg sync-parsers",
-  ft = 'norg',
+  ft = "norg",
   dependencies = { "nvim-lua/plenary.nvim" },
   event = "VeryLazy",
   opts = {
