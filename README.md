@@ -8,9 +8,10 @@ is unable to locate the astronvim module, which is fixed at line 2 by updating
 
 ## Modifications with respect to default AstroNvim
 - replace **neo-tree** file explorer with **oil**. I believe **oil** is more functional
-- added **leap**, which is the best navigation plugin out there.
+- added **flash**, which is the best navigation plugin out there.
 - used **bamboo** as colorscheme, which is most pleasant to the eyes.
-- added **neorg**, the vimwiki replacement. I still like the vimwiki ease of use, though,
+- added **neorg**, the vimwiki replacement. I still like the vimwiki ease of use, though
+- replaced **nvim-cmp** with **coq**, which is a better completion plugin
   but neorg just look so good!
 
 ## 🛠️ Installation
